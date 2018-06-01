@@ -1,5 +1,3 @@
-package vigenere;
-
 import java.awt.BorderLayout;
 import java.awt.EventQueue;
 
@@ -229,7 +227,7 @@ public class VigenereCipherGUI extends JFrame {
 			String text = VigenereCipher.decipher(areaInput.getText());
             areaOutput.setText(text.replaceFirst(".+-", ""));
             fieldKey.setText(text.split("-")[0]);
-    		areaInfo.append("\n" + text.length() + " letters" + " deciphered and captured key.\n" );
+    		areaInfo.append("\n" + text.split("-")[0].length() + " letters" + " deciphered and captured key.\n" );
 		}
 		
 	}

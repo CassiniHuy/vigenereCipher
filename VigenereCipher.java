@@ -1,5 +1,3 @@
-package vigenere;
-
 import java.util.Arrays;
 
 /**
