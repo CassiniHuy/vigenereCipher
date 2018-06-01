@@ -227,7 +227,7 @@ public class VigenereCipherGUI extends JFrame {
 			String text = VigenereCipher.decipher(areaInput.getText());
             areaOutput.setText(text.replaceFirst(".+-", ""));
             fieldKey.setText(text.split("-")[0]);
-    		areaInfo.append("\n" + text.split("-")[0].length() + " letters" + " deciphered and captured key.\n" );
+    		areaInfo.append("\n" + text.replaceFirst(".+-", "").length() + " letters" + " deciphered and captured key.\n" );
 		}
 		
 	}
